@@ -21,8 +21,32 @@ body>*{
 
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
+
+.group{
+    display: flex;
+}
+
+.mode{
+    width: 30px;
+    height: 30px;
+    /* color: black; */
+    transform: rotate(270deg);
+}
+
+#tickmarks{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 30px;
+}
+
+option {
+    padding: 0;
+}
+
 
 .play-ground{
 
@@ -39,6 +63,7 @@ body>*{
     max-height: 600px;
 
     border: 1px solid black;
+
 }
 
 .gridY{

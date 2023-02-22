@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,25 @@
     <link rel="stylesheet" href="style.css">
     <title>Etch a sketch</title>
 </head>
+
 <body>
 
     <div class="title">Etch A Sketch</div>
 
     <div class="control-panel">
-        <button type="button" class="btn">clear</button>
-        <input type="range" class="adjuster" name="adjuster" min="5" max="80" value="16" step="1">
-        <span class="lb">16x16</span>
+        <button type="button" class="btn">clear</button>        
+        <div class="group">
+            <input type="range" class="adjuster" name="adjuster" min="5" max="80" value="16" step="1">
+            <span class="lb">16x16</span>
+        </div>
+
+        <div class="group">
+            <input type="range" class="mode" name="mode" min="0" max="1" value="1" step="1" list="tickmarks">
+            <datalist id="tickmarks">
+                <option value="0" label="gray"></option>
+                <option value="1" label="color"></option>
+            </datalist>
+        </div>
     </div>
 
     <div class="play-ground">
@@ -24,4 +36,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
